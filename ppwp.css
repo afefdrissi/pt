@@ -1,0 +1,151 @@
+html{
+    scroll-behavior: smooth;
+}
+body{
+    background: #f6f6f6;
+    padding: 0px;
+    margin: 0;
+    font-family : Roboto;
+   /* overflow-x: hidden;*/
+}
+
+#welcome-section{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+#welcome-section>p{
+    width: 60vw;
+}
+.primary-head-line{
+    font-weight : bold;
+    font-size : 48px;
+    color : #FF7E41;
+}
+.secondary-head-line{
+    font-weight : bold;
+    font-size : 48px;
+    color : #333;
+}
+.third-head-line{
+    font-weight : bold;
+    font-size : 48px;
+    color : rgb(236, 236, 236);
+}
+.project-tile{
+    height: 340px;
+    width: 290px;
+    overflow: hidden;
+    margin: 12px;
+    box-shadow: 0px 0px 5px 2px #1d1d1d9b;
+}
+.project-tile a{
+    display: block;
+    padding:16px;
+    width: 200px;
+    color: #f7f5f5;
+    background : #43FF6F;
+    font-size : 18px;
+    font-weight: bold;
+    text-decoration: none;
+    text-align: center;
+}
+#welcome-section{
+    margin:0px 80px 0px 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+}
+#projects {
+    background-color: #333;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+#projects div{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.project-tile img{
+    width:100%;
+    height: 100%;
+    }
+    .project-tile:hover div{
+        
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 10px;
+        background : rgba(255, 255, 255, 0.9);
+        animation-name: showdescription ;
+        animation-duration: 500ms;
+        animation-fill-mode: forwards;}
+     @keyframes showdescription{
+        0%{
+            position: relative;
+            bottom: 0%;
+        
+        }    
+            100%{
+                position: relative;
+                bottom: 90%;
+            
+            }
+        }
+        @-webkit-keyframes showdescription{
+            0%{
+                position: relative;
+                bottom: 0%;
+            
+            }    
+                100%{
+                    position: relative;
+                    bottom: 90%;
+                
+                }
+            }
+ h2{
+     font-weight: bold;
+  font-size : 24px;
+color : rgb(251, 93, 49);
+        }        
+h6{
+    font-size : 16px;
+    color : #FF7E5A;
+}
+p{
+    font-size : 16px;text-align: center;
+    color : #666666;
+}
+
+#navbar{
+    position: fixed;
+    top:0;
+    right:0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    padding: 3.125% ;
+z-index: 100;
+}
+#navbar>a{
+    text-decoration: none;
+    font-weight: bold;
+    font-size : 16px;
+    color : #FF7E5A;
+    margin:10px 0px 10px 0px;
+}
+@media only screen and (max-width:600px){
+body{
+    background-color: rgb(255, 255, 255);
+}
+}
